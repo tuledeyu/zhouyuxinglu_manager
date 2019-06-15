@@ -1,0 +1,40 @@
+@import "mixins/mixins";
+
+@include b(data) {
+    .sm-data-card {
+        width: 100%;
+        border: 1px solid #409eff;
+        background: #e6f7ff;
+
+        span {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    }
+
+    .sm-data--right {
+        float: right;
+        margin-top: 20px;
+    }
+
+    .sm-tab-pane {
+        display: flex;
+        justify-content: space-between;
+
+        .sm-data__aside {
+            width: 211px;
+        }
+
+        .sm-data__section {
+            margin-left: 50px;
+            flex: 1;
+            background: #ffffff;
+            padding: 20px 30px;
+
+            .sm-data_section-form__plus {
+                margin-left: 100px;
+            }
+        }
+    }
+}

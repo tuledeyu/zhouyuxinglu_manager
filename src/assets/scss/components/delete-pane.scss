@@ -1,0 +1,22 @@
+@import "mixins/mixins";
+@import "common/var";
+
+@include b(delete-pane) {
+    padding-bottom: 30px;
+
+    &>span {
+        display: inline-block;
+        margin-right: 1.1rem;
+    }
+
+    @include m(total) {
+        color: #1890FF;
+    }
+
+    @include m(line) {
+        &::after {
+            content: '|';
+            margin: 0 1.1rem;
+        }
+    }
+}

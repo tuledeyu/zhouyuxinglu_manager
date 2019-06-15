@@ -1,0 +1,41 @@
+@import "mixins/mixins";
+@import "common/var";
+
+@include b(page) {
+    @include m(bg) {
+        background: $--page-background;
+        padding: $--page-padding;
+    }
+
+    @include when(between) {
+        .el-tab-pane {
+            display: flex;
+            justify-content: space-between;
+        }
+
+    }
+
+    .el-tabs__nav {
+        margin-left: 30px;
+    }
+
+    .sm-dropdown-link {
+        margin-left: 10px;
+        color: #409eff;
+        cursor: pointer;
+    }
+
+    .el-dialog {
+        .el-form-item__content {
+            width: 300px;
+        }
+
+        .el-cascader {
+            width: 300px;
+        }
+
+        .el-select {
+            width: 300px;
+        }
+    }
+}

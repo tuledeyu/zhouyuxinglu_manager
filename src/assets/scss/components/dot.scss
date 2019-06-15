@@ -1,0 +1,16 @@
+@import "mixins/mixins";
+
+@include b(dot) {
+    height: 20px;
+    padding: 0 5px;
+    line-height: 19px;
+    display: inline-block;
+
+    @include e(raduis) {
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 10px;
+    }
+}

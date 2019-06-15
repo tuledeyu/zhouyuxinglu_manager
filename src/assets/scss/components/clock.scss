@@ -1,0 +1,9 @@
+@import "mixins/mixins";
+
+@include b(clock) {
+    font-size: 20px;
+    color: #606295;
+    letter-spacing: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+}

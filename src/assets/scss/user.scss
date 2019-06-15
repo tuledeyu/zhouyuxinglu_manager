@@ -1,0 +1,63 @@
+@import "mixins/mixins";
+
+@include b(user) {
+    display: flex;
+    justify-content: space-between;
+
+    .sm-user__aside {
+        min-width: 300px;
+        background: #ffffff;
+
+        .sm-user__aside-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid rgb(209, 202, 202);
+
+            h4 {
+                color: #515151;
+                margin: 0;
+            }
+
+            .sm-user__aside-header__icon i {
+                margin-left: 15px;
+                font-size: 18px;
+                cursor: pointer;
+
+                &:hover {
+                    color: #409eff;
+                }
+            }
+        }
+
+        .sm-user__aside-main {
+            padding: 20px;
+        }
+
+        .el-tree {
+            margin-top: 30px;
+
+            .el-tree-node__expand-icon {
+                display: none;
+            }
+
+            .el-icon-document {
+                color: #409eff;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .sm-user__section {
+        margin-left: 50px;
+        flex: 1;
+        background: #ffffff;
+        padding: 20px 30px;
+        width: 0;
+
+        .sm-user__section-form__plus {
+            margin-left: 100px;
+        }
+    }
+}

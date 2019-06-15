@@ -1,0 +1,75 @@
+@import 'var.scss';
+
+.sm-rotate-enter-active {
+    z-index: 1;
+    animation: scaleUp 0.7s ease both;
+}
+
+.sm-rotate-leave-active {
+    z-index: 999;
+    transform-origin: 0% 0%;
+    animation: rotateFall 1s both ease-in;
+}
+
+@keyframes scaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+@keyframes rotateFall {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+        animation-timing-function: ease-out;
+    }
+
+    40% {
+        transform: rotateZ(17deg);
+    }
+
+    60% {
+        transform: rotateZ(16deg);
+    }
+
+    100% {
+        transform: translateY(100%) rotateZ(17deg);
+    }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.28s;
+}
+
+.fade-enter,
+.fade-leave-active {
+    opacity: 0;
+}
+
+.sm-zoom-in-left-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.sm-zoom-in-left-leave-to {
+    opacity: 0;
+    transform: translateX(-100%);
+    position: absolute;
+}
+
+.sm-zoom-in-left-enter-to,
+.sm-zoom-in-left-leave {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.sm-zoom-in-left-enter-active,
+.sm-zoom-in-left-leave-active {
+
+    transition: $--md-fade-transition;
+}

@@ -1,0 +1,50 @@
+@import "mixins/mixins";
+
+@include b(fun) {
+    .sm-fun__aside {
+        min-width: 211px;
+        padding-bottom: 100px;
+    }
+
+    .sm-fun__section {
+        margin-left: 50px;
+        flex: 1;
+        background: #ffffff;
+        padding: 20px 30px;
+
+        .sm-fun__section-form__plus {
+            margin-left: 100px;
+        }
+
+        h5 {
+            font-size: 19px;
+            font-weight: 400;
+            margin: 10px 0;
+        }
+
+        .sm-fun__section__tip {
+            font-size: 14px;
+            color: #9d9d9d;
+        }
+
+
+    }
+
+    .el-tabs__nav {
+        margin-left: 30px;
+    }
+
+    .box-card {
+        max-width: 800px;
+        margin-top: 20px;
+
+        .el-checkbox {
+            min-width: 150px;
+            height: 50px;
+        }
+
+        .sm-card__right {
+            margin-left: 100px;
+        }
+    }
+}

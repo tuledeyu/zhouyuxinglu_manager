@@ -1,0 +1,47 @@
+@import "mixins/mixins";
+
+@include b(tag) {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #d8dce5;
+    color: #39393a;
+    background: #fff;
+    padding: 0 8px;
+    font-size: 14px;
+    margin-left: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &:hover {
+        background: #eaeefb;
+    }
+
+    &.sm-tag--is-active {
+        background: #42b983;
+        color: #fff;
+        border-color: #42b983;
+
+        &::before {
+            content: '';
+            background: #fff;
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin: 0 8px 0.7px 0;
+        }
+    }
+
+    .el-icon-close {
+        border-radius: 50%;
+        padding: 2px;
+        font-size: 12px;
+        margin-left: 8px;
+
+        &:hover {
+            background-color: #b4bccc;
+            color: #fff;
+        }
+    }
+}

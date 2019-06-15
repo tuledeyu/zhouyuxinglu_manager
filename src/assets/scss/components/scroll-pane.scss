@@ -1,0 +1,13 @@
+@import "mixins/mixins";
+
+@include b(scroll-pane) {
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    @include m(wrapper) {
+        position: absolute;
+
+    }
+}
